@@ -2,15 +2,15 @@
     "zone_key": "zone-default-zone",
     "listener_key": "egress-to-listener",
     "domain_keys": [
-        "{{ .name }}-egress-domain"
+        "{{ .Name }}-egress-domain"
     ],
-    "name": "egress-to-{{ .egress.host }}",
+    "name": "egress-to-{{ .Egress.host }}",
     "ip": "0.0.0.0",
     "port": 10909,
     "protocol": "http_auto",
     "secret": {
-        "secret_key": "{{ .name }}.identity",
-        "secret_name": "spiffe://quickstart.greymatter.io/{{ .name }}",
+        "secret_key": "{{ .Name }}.identity",
+        "secret_name": "spiffe://quickstart.greymatter.io/{{ .Name }}",
         "secret_validation_name": "spiffe://quickstart.greymatter.io",
         "subject_names": [],
         "ecdh_curves": [

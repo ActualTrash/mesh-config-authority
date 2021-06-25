@@ -1,8 +1,8 @@
 {
     "zone_key": "zone-default-zone",
-    "domain_key": "{{ .name }}-egress-domain",
-    "route_key": "{{ .name }}-to-{{ .egress.host }}-route",
-    "path": "/{{ .egress.host }}/",
+    "domain_key": "{{ .Name }}-egress-domain",
+    "route_key": "{{ .Name }}-to-{{ .Egress.host }}-route",
+    "path": "/{{ .Egress.host }}/",
     "prefix_rewrite": "/",
-    "shared_rules_key": "{{ .name }}-to-{{ .egress.host }}-rules"
+    "shared_rules_key": "{{ .Name }}-to-{{ .Egress.host }}-rules"
   }

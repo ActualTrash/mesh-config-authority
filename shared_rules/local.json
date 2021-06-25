@@ -1,12 +1,12 @@
 {
     "zone_key": "zone-default-zone",
-    "shared_rules_key": "{{ .name }}-local-rules",
-    "name": "{{ .name }}-local",
+    "shared_rules_key": "{{ .Name }}-local-rules",
+    "name": "{{ .Name }}-local",
     "default": {
         "light": [
             {
                 "constraint_key": "",
-                "cluster_key": "cluster-{{ .name }}-local",
+                "cluster_key": "cluster-{{ .Name }}-local",
                 "metadata": null,
                 "properties": null,
                 "response_data": {},

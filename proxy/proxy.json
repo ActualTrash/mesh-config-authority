@@ -1,15 +1,15 @@
 {
     "zone_key": "zone-default-zone",
-    "proxy_key": "{{ .name }}-proxy",
+    "proxy_key": "{{ .Name }}-proxy",
     "domain_keys": [
-        "{{ .name }}-ingress-domain",
-        "{{ .name }}-egress-domain"
+        "{{ .Name }}-ingress-domain",
+        "{{ .Name }}-egress-domain"
     ],
     "listener_keys": [
         "ingress-from-listener",
         "egress-to-listener"
     ],
-    "name": "{{ .name }}",
+    "name": "{{ .Name }}",
     "listeners": null,
     "active_proxy_filters": [
         "gm.metrics"

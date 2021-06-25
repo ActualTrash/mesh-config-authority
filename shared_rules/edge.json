@@ -1,12 +1,12 @@
 {
   "zone_key": "zone-default-zone",
-  "shared_rules_key": "edge-to-{{ .name }}-rules",
-  "name": "edge-to-{{ .name }}",
+  "shared_rules_key": "edge-to-{{ .Name }}-rules",
+  "name": "edge-to-{{ .Name }}",
   "default": {
     "light": [
       {
         "constraint_key": "",
-        "cluster_key": "edge-to-{{ .name }}-cluster",
+        "cluster_key": "edge-to-{{ .Name }}-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},

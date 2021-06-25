@@ -1,12 +1,12 @@
 {
   "zone_key": "zone-default-zone",
-  "shared_rules_key": "{{ .name }}-to-{{ .egress.host }}-rules",
-  "name": "{{ .name }}-to-{{ .egress.host }}-rules",
+  "shared_rules_key": "{{ .Name }}-to-{{ .Egress.host }}-rules",
+  "name": "{{ .Name }}-to-{{ .Egress.host }}-rules",
   "default": {
     "light": [
       {
         "constraint_key": "",
-        "cluster_key": "{{ .name }}-to-{{ .egress.host }}-cluster",
+        "cluster_key": "{{ .Name }}-to-{{ .Egress.host }}-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},

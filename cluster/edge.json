@@ -1,7 +1,7 @@
 {
   "zone_key": "zone-default-zone",
-  "cluster_key": "edge-to-{{ .name }}-cluster",
-  "name": "{{ .name }}",
+  "cluster_key": "edge-to-{{ .Name }}-cluster",
+  "name": "{{ .Name }}",
   "instances": [],
   "require_tls": true,
   "secret": {
@@ -9,7 +9,7 @@
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/{{ .name }}"
+      "spiffe://quickstart.greymatter.io/{{ .Name }}"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
