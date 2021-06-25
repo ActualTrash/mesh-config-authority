@@ -1,7 +1,7 @@
 {
     "zone_key": "zone-default-zone",
-    "cluster_key": "{{ .Name }}-to-{{ .Egress.host }}-cluster",
-    "name": "{{ .Egress.host }}",
+    "cluster_key": "{{ .Name }}-to-{{ .Egress.Name }}-cluster",
+    "name": "{{ .Egress.Name }}",
     "instances": [],
     "require_tls": true,
     "secret": {
@@ -9,7 +9,7 @@
       "secret_name": "spiffe://quickstart.greymatter.io/{{ .Name }}",
       "secret_validation_name": "spiffe://quickstart.greymatter.io",
       "subject_names": [
-        "spiffe://quickstart.greymatter.io/{{ .Egress.host }}"
+        "spiffe://quickstart.greymatter.io/{{ .Egress.Name }}"
       ],
       "ecdh_curves": [
         "X25519:P-256:P-521:P-384"

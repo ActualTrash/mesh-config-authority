@@ -1,0 +1,17 @@
+{
+  "clusterName": "{{ .Name }}",
+  "zoneName": "zone-default-zone",
+  "name": "{{ .Name }}",
+  "version": "1.0",
+  "owner": "Decipher",
+  "businessImpact": "low",
+  "capability": "Tutorial",
+  "runtime": "Python",
+  "documentation": "/services/{{ .Name }}/latest/",
+  "prometheusJob": "{{ .Name }}",
+  "minInstances": 1,
+  "maxInstances": 2,
+  "enableInstanceMetrics": true,
+  "enableHistoricalMetrics": true,
+  "metricsPort": 8081
+}
