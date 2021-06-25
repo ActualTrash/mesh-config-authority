@@ -1,0 +1,20 @@
+{
+  "zone_key": "zone-default-zone",
+  "shared_rules_key": "{{ .name }}-to-{{ .egress.host }}-rules",
+  "name": "{{ .name }}-to-{{ .egress.host }}-rules",
+  "default": {
+    "light": [
+      {
+        "constraint_key": "",
+        "cluster_key": "{{ .name }}-to-{{ .egress.host }}-cluster",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "dark": null,
+    "tap": null
+  }
+}
+

@@ -1,0 +1,12 @@
+{
+    "zone_key": "zone-default-zone",
+    "cluster_key": "cluster-{{ .name }}-local",
+    "name": "{{ .name }}-local",
+    "instances": [
+        {
+            "host": "localhost",
+            "port": {{ .ServicePort }}
+        }
+    ],
+    "require_tls": false
+}

@@ -1,0 +1,8 @@
+{
+    "zone_key": "zone-default-zone",
+    "domain_key": "edge",
+    "route_key": "edge-to-{{ .name }}-route",
+    "path": "/services/{{ .name }}/latest",
+    "prefix_rewrite": "/services/{{ .name }}/latest/",
+    "shared_rules_key": "edge-to-{{ .name }}-rules"
+}

@@ -1,0 +1,8 @@
+{
+    "zone_key": "zone-default-zone",
+    "domain_key": "{{ .name }}-ingress-domain",
+    "route_key": "{{ .name }}-local-route",
+    "path": "/",
+    "prefix_rewrite": "",
+    "shared_rules_key": "{{ .name }}-local-rules"
+}
