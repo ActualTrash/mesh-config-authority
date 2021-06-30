@@ -1,6 +1,6 @@
 {
     "zone_key": "zone-default-zone",
-    "listener_key": "egress-to-listener",
+    "listener_key": "{{ .Name }}-egress-to-listener",
     "domain_keys": [
         "{{ .Name }}-egress-domain"
     ],
