@@ -6,8 +6,8 @@
         "{{ .Name }}-egress-domain"
     ],
     "listener_keys": [
-        "ingress-from-edge-listener",
-        "egress-to-listener"
+        "{{ .Name }}-ingress-from-edge-listener",
+        "{{ .Name }}-egress-to-listener"
     ],
     "name": "{{ .Name }}",
     "listeners": null,
